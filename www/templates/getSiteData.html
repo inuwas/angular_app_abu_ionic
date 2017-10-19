@@ -1,0 +1,13 @@
+<ion-view view-title="ABU NEWS">
+  <ion-content>
+    <div class="list">
+        <!-- <a ng-repeat="siteDataObject in siteData.posts" href="#/app/passedData" class="item item-thumbnail-left item-icon-right item-text-wrap" ng-click="getTheIndex({{$index}})"> -->
+        <a ng-repeat="siteDataObject in siteData.posts" href="#/app/passedData" class="item item-thumbnail-left item-icon-right item-text-wrap" ng-click="getTheIndex({{$index}})">
+          <img ng-src="{{ siteDataObject.thumbnail}}">
+          <h2>{{ siteDataObject.title_plain }}</h2>
+          <h4>{{ siteDataObject.excerpt | htmlToPlaintext}}</h4>
+          <i class="icon ion-chevron-right balanced"></i>
+        </a>
+      </div>
+  </ion-content>
+</ion-view>
